@@ -96,20 +96,20 @@ clean:
 fclean: clean
 	@echo " $(shell\
 					if [ -f libft/libft.a ];\
-    					then\
-    						echo "- ft : Removing  $(CL_RED)$ libft.a $(CL_WHITE)";\
-    						rm -f libft/libft.a;\
+						then\
+							echo "- ft : Removing  $(CL_RED)$ libft.a $(CL_WHITE)";\
+							rm -f libft/libft.a;\
 					else\
 							echo "";\
 					fi)"
 	@echo " $(shell\
-    				if [ -f $(TARGET) ];\
-    				then\
-    					echo "- ls : Removing  $(CL_RED)$(TARGET)$(CL_WHITE)";\
-    					rm -f $(TARGET);\
-    				else\
-    					echo "# ls : Nothing to fclean";\
-    				fi)"
+					if [ -f $(TARGET) ];\
+					then\
+						echo "- ls : Removing  $(CL_RED)$(TARGET)$(CL_WHITE)";\
+						rm -f $(TARGET);\
+					else\
+						echo "# ls : Nothing to fclean";\
+					fi)"
 	@echo " $(shell\
 					if [ -f $(BIN) ];\
 						then\
@@ -129,3 +129,4 @@ $(OBJ_DIR):
 	@echo " # ls : $(ENV) kernel"
 	@echo " + ls : Creating $(CL_GREED)$(OBJ_DIR)$(CL_WHITE)$(CL_WHITE)"
 	@mkdir -p $(OBJ_DIR)
+
